@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Tile.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Sky.tscn" type="PackedScene" id=3]
+[ext_resource path="res://ChatRoom.tscn" type="PackedScene" id=4]
 
 [node name="MainScene" type="Node2D"]
 
@@ -108,3 +109,9 @@ scale = Vector2( 32, 18 )
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
 position = Vector2( 40, 528 )
+
+[node name="ChatRoom" parent="." instance=ExtResource( 4 )]
+margin_left = -58.6747
+margin_top = 9.15436
+margin_right = -58.6747
+margin_bottom = 9.15436

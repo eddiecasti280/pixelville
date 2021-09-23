@@ -5,8 +5,8 @@
 [node name="ChatRoom" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_top = -2.37842
-margin_bottom = -2.37842
+margin_top = -2.0
+margin_bottom = -346.0
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -20,56 +20,56 @@ __meta__ = {
 }
 
 [node name="LeaveButton" type="Button" parent="SetUp"]
-margin_left = -1.41422
-margin_top = 442.649
-margin_right = 92.5858
-margin_bottom = 492.649
+margin_left = 311.399
+margin_top = 192.719
+margin_right = 405.399
+margin_bottom = 242.719
 text = "Leave"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="JoinButton" type="Button" parent="SetUp"]
-margin_left = -1.58578
-margin_top = 373.657
-margin_right = 95.4142
-margin_bottom = 424.657
+margin_left = 209.546
+margin_top = 191.041
+margin_right = 306.546
+margin_bottom = 242.041
 text = "Join"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="HostButton" type="Button" parent="SetUp"]
-margin_left = -3.0
-margin_top = 298.0
-margin_right = 91.0
-margin_bottom = 355.0
+margin_left = 110.418
+margin_top = 191.0
+margin_right = 204.418
+margin_bottom = 242.0
 text = "Host"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="IpEnter" type="LineEdit" parent="SetUp"]
-margin_left = 102.0
-margin_top = 554.0
-margin_right = 229.0
-margin_bottom = 595.0
-text = "127.0.0,1"
+margin_left = 415.72
+margin_top = 193.663
+margin_right = 542.72
+margin_bottom = 234.663
+text = "127.0.0.1"
 
 [node name="RoomUI" type="Panel" parent="."]
 margin_left = 101.0
-margin_top = 6.0
+margin_top = 9.0
 margin_right = 1002.0
-margin_bottom = 552.0
+margin_bottom = 174.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="ChatInput" type="LineEdit" parent="RoomUI"]
-margin_left = 30.0
-margin_top = 488.0
-margin_right = 853.0
-margin_bottom = 533.0
+margin_left = 33.0
+margin_top = 102.0
+margin_right = 857.0
+margin_bottom = 147.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -78,7 +78,7 @@ __meta__ = {
 margin_left = 33.0
 margin_top = 19.0
 margin_right = 857.0
-margin_bottom = 466.0
+margin_bottom = 100.0
 
 [connection signal="button_up" from="SetUp/LeaveButton" to="." method="leave_room"]
 [connection signal="button_up" from="SetUp/JoinButton" to="." method="join_room"]
